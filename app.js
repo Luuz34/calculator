@@ -12,10 +12,7 @@ class Calculator {
   }
 
   delete() {
-    // if equals wasn't used, do this;
-    if (!equalsButton) {
-      this.currentOperand = this.currentOperand.toString().slice(0, -1);
-    }
+    this.currentOperand = this.currentOperand.toString().slice(0, -1);
   }
 
   appendNumber(number) {
